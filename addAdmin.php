@@ -32,6 +32,15 @@
           <h3>Fill in the data for new Admin</h3>
           <input type="text" placeholder="username" name="username" required="">
           <input type="password" placeholder="password" name="password" required="">
+          <!-- <div class="form-group"> -->
+            <label for="sel1">Select category:</label>
+            <select class="form-control" id="sel1" name="category">
+              <option value="all">All</option>
+              <option value="movies">Movies</option>
+              <option value="sport">Sport</option>
+              <option value="history">History</option>
+            </select>
+          <!-- </div> -->
           <input type="submit" value="Add" name='submit'>
         </form>
       </div>

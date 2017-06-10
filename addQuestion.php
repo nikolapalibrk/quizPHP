@@ -53,10 +53,15 @@
             <label for="answer" class="control-label col-lg-4">Answer: </label>
             <div class="col-lg-8"><input type="text" class="form-control" id="answer" name="answer" placeholder="" required></div>
           </div>
-          <div class="form-group">
-            <label for="category" class="control-label col-lg-4">Category: </label>
-            <div class="col-lg-8"><input type="text" class="form-control" id="category" name="category" placeholder="" required></div>
-          </div>
+          <?php
+              if($_SESSION['category'] === 'all'){
+              echo  '<div class="form-group">';
+              echo ' <label for="category" class="control-label col-lg-4">Category: </label>';
+              echo ' <div class="col-lg-8"><input type="text" class="form-control" id="category" name="category" placeholder="" required></div>';
+              echo  '</div>';
+              }
+           ?>
+
           <div class="form-group">
             <label for="points" class="control-label col-lg-4">Points: </label>
             <div class="col-lg-8"><input type="text" class="form-control" name="points" placeholder="" required></div>
