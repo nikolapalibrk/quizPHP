@@ -80,11 +80,12 @@ nav
       margin-top: 150px
       input[type="submit"]
         background-color: seagreen
-        color: white
+        color: floralwhite
         width: 320px
         cursor: pointer
-        &:focus
+        &:hover
           color: white
+          background-color: darken(seagreen, 5)
       i
         font-size: 40px
         color: seagreen
@@ -155,3 +156,10 @@ nav
 
 #addQuestionBody h3
   margin-bottom: 40px
+
+.btn-default:focus
+  background-color: mediumslateblue
+  color: floralwhite
+  font-weight: bold
+#loginBody submit:hover
+  background-color: red
