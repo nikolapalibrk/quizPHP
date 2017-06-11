@@ -20,7 +20,7 @@
 
    <body id="adminBody">
       <nav>
-        <a href="#">Quiz App</a>
+        <a href="adminQuiz.php">Quiz App</a>
         <ul>
           <li><a href="addQuestion.php">Add Questions</a></li>
           <li><a href="addAdmin.php">Add Admin</a></li>
