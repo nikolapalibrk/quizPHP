@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="css/main.min.css">
    </head>
    <nav>
-     <a href="index.php">Quiz App</a>
+     <a href="adminQuiz.php">Quiz App</a>
      <ul>
        <li><a href="addQuestion.php">Add Questions</a></li>
        <li><a href="addAdmin.php">Add Admin</a></li>
