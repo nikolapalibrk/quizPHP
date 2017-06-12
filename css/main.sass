@@ -13,6 +13,7 @@ nav
   a
     font-size: 24px
     padding: 20px
+    font-family: 'Bitter', serif
     display: block
     color: whitesmoke
     float: left
@@ -29,10 +30,26 @@ nav
       float: left
       color: whitesmoke
       a
+        position: relative
+        color: ghostwhite
+        font-size: 24px
+        font-family: 'Bitter', serif
         cursor: pointer
-        &:hover
-          color: rgb(7, 31, 0)
-          text-decoration: none
+        &::after
+          &:hover
+            text-decoration: none
+          height: 2px
+          background-color: #00C871
+          content: ''
+          bottom: 15px
+          width: 0
+          position: absolute
+          left: 10%
+          transition: all .3s linear
+        &:hover:after
+          color: red
+          width: 80%
+
 // #indexBody .wrapper
 //   display: none
 .wrapper
@@ -165,3 +182,6 @@ nav
   font-weight: bold
 #loginBody submit:hover
   background-color: red
+#logo:hover
+  color: lightgreen
+  cursor: pointer
